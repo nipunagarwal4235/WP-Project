@@ -7,7 +7,6 @@
 
   /*========== Colors ==========*/
 
-
   --first-color: #ff69b4;
   --first-color-alt: #ff00ae;
   --title-color: #393939;
@@ -64,24 +63,6 @@
 
 html {
   scroll-behavior: smooth;
-}
-
-/*========== Variables Dark theme ==========*/
-body.dark-theme {
-  --title-color: #f1f3f2;
-  --text-color: #c7d1cc;
-  --body-color: #1d2521;
-  --container-color: #27302c;
-}
-
-/*========== Button Dark/Light ==========*/
-.change-theme {
-  position: absolute;
-  right: 1rem;
-  top: 1.8rem;
-  color: var(--text-color);
-  font-size: 1rem;
-  cursor: pointer;
 }
 
 body {
@@ -237,7 +218,7 @@ img {
   justify-content: center;
   align-items: center;
   padding: 0.3rem;
-  background: rgba(6, 156, 84, 0.5);
+  background: var(--first-color-alt);
   border-radius: 0.4rem;
   z-index: var(--z-tooltip);
   transition: 0.4s;
@@ -263,6 +244,7 @@ img {
 .home__container {
   height: calc(100vh - var(--header-height));
   align-content: center;
+  margin-left: 0px;
 }
 
 .home__title {

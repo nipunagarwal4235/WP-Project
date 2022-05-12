@@ -65,15 +65,16 @@
         <div class="form signup">
           <span class="title">Registration</span>
 
-          <form action="#">
+          <form >
             <div class="input-field">
               <input
                 type="text"
+                id="name"
                 placeholder="Enter your name"
                 required
-                name="username"
+                name="name"
               />
-              
+
               <i class="uil uil-user"></i>
               <p>
                 Username must be lowercase including numbers and contain 5 - 12
@@ -94,12 +95,13 @@
                 type="password"
                 class="password"
                 name="password"
+                id="password"
                 placeholder="Create a password"
                 required
               />
               <i class="uil uil-lock icon"></i>
             </div>
-            <div class="input-field">
+            <!-- <div class="input-field">
               <input
                 type="password"
                 class="password"
@@ -109,7 +111,7 @@
               />
               <i class="uil uil-lock icon"></i>
               <i class="uil uil-eye-slash showHidePw"></i>
-            </div>
+            </div> -->
 
             <div class="checkbox-text">
               <div class="checkbox-content">
@@ -121,7 +123,7 @@
             </div>
 
             <div class="input-field button">
-              <input type="button" value="Login Now" />
+              <input type="submit" value="SignUp Now" />
             </div>
           </form>
 
